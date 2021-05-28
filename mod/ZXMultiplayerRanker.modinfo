@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e8eb3801-cf86-497c-84b2-8352957e28e9" version="1">
+  <Properties>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <Name>ZX Multiplayer Ranker</Name>
+    <Teaser>Creates 1st, 2nd, 3rd, etc ranking for competitive multiplayer games</Teaser>
+    <Description>[COLOR_Green]ZX Multiplayer Ranker[ENDCOLOR] adds to the World Rankings Side panel to show an overall 1st, 2nd, 3rd, etc ranking for the players. As well as adding a new window to the End Game Menu showing the final rankings and it's calculation. [NEWLINE][NEWLINE]Checkout the github for full details [COLOR_Civ6LightBlue]https://github.com/pkbigmarsh/zx-mutliplayer-ranker[ENDCOLOR]</Description>
+    <Authors>Pkbigmarsh</Authors>
+    <EnabledByDefault>0</EnabledByDefault>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <InGameActions>
+    <!-- Database acctions? cui.modinfo::19 - 26, load cui.config -->
+    <ImportFiles id="ZXMultiplayerLibs_libs">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <!-- logging -->
+      <File>modules/lib/logging/logging.lua</File>
+    </ImportFiles>
+  </InGameActions>
+  <Files>
+    <!-- libs -->
+    <File>modules/lib/logging/logging.lua</File>
+  </Files>
+</Mod>
